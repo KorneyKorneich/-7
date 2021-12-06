@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Огромный выбор велосипедов, запчастей и аксессуаров в Минске! Лучшие цены, быстрая доставка. Покупайте велосипеды в каталоге CycleSheep." >
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./slider.css">
+    <script src="./script.js"></script>
+    
+
+<link rel="shortcut icon" href="./logos/logo.ico" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="./logos/logo.ico">
+<link rel="icon" type="image/x-icon" href="./logos/logo.ico">
+<link rel="icon" href="./logos/logo.ico" /> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <script defer src="slider.js"></script>
+  
+  
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+ 
+      let slider = new SimpleAdaptiveSlider('.slider', {
+        autoplay: true,
+        interval: 10000,
+      });
+    });
+  </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+            sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        }
+    
+        .slider {
+          max-width: 100%;
+        }
+    
+        
+        .slider__items {
+          counter-reset: slide;
+        }
+
+    
+        .slider__item {
+          height: 500px;
+          position: relative;
+          counter-increment: slide;
+        }
+        .slider__items_description
+        {
+          font-size: 1.3em;
+        }
+    
+        
+    
+        .slider__item:nth-child(1) {
+            background:linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ), url("pictures/dangerholm.jpg");
+          background-size: cover ;
+          background-position: center center;
+          top: 0;
+          left: 0;
+         
+        }
+    
+        .slider__item:nth-child(2) {
+            background:linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ), url("pictures/repare.jpg");
+          background-size: cover ;
+          background-position: center center;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+        }
+    
+        .slider__item:nth-child(3) {
+            background:linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+            ), url("pictures/schindelhauer_56b0cc_8.jpg");
+
+            background-size: cover ;
+            background-position: center center;
+          
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+    
+        .slider__item:nth-child(4) {
+            background:linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ), url("pictures/customization.jpg");
+            background-size: cover ;
+          background-position: center center;
+          top: 0;
+          left: 0;
+          overflow: hidden;     
+        }
+    
+        .slider__item_inner {
+          position: absolute;
+          left: 15%;
+          right: 15%;
+          top: 20px;
+          bottom: 40px;
+          overflow: hidden;
+          color: #fff;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .slider__item_title {
+          font-size: 2.5em;
+        
+        }
+      </style>
+    <title>CycleSheep - все для вашего велосипеда</title>
+</head>
+<body>
+    <header>
+        <div id="logo"> 
+            <a title="На главную" href="#"><img src="logos/logo.png" alt="Logo"></a>
+        </div>
+        <div id="name">
+        <h1>
+            CycleSheep
+        </h1>
+        <span><strong>
+          Веломагазин
+        </strong></span>
+        </div>
+        <nav>
+            <a href="#" title="Статус заказа"><img src="logos/order.png" alt="Сатус заказа"></a>
+            <a href="#" title="О нас"><img src="logos/inf.png" alt="Другая информация"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                <div class="slider__item">
+                    <div class="slider__item_inner">
+                    <span class="slider__item_title">
+                        Искали велосипед?
+                    </span>
+                    <span class="slider__items_description">
+                       Вы уже на шаг ближе к покупке. Вам осталось лишь выбрать его из нашего ассортимента.<br><button class="btn">Выбрать</button>
+                    </span>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item_inner">
+                    <span class="slider__item_title">
+                        У нас есть все
+                    </span>
+                    <span class="slider__items_description">
+                      От детских беговелов до профессиональных двухподвесных велосипедов по самым выгодным ценам на рынке Беларуси.
+                    </span>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item_inner">
+                    <span class="slider__item_title">
+                        Хотите что-то поменять при покупке?
+                    </span>
+                    <span class="slider__items_description">
+                      На здоровье! Наши мастера всегда готовы изменить внешний вид велосипеда, прислушиваясь к вашим предпочтениям.
+                    </span>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item_inner">
+                    <span class="slider__item_title">
+                        Не можете найти подходящий вариант в каталоге?
+                    </span>
+                    <span class="slider__items_description">
+                      Может вы сами выберете компоненты велосипеда? Вы всегда можете обратится к нашим сотрудникам, которые всегда готовы ответить на ваши вопросы. 
+                    </span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+            </div>
+            
+          
+
+
+        <article id="first_article">
+            <section  id="first_section"> 
+              <div>
+                <img src="pictures/vel.jpg" alt="Лучшие велосипеды">
+              </div>
+              <div class="content">
+                <h2 class="first_section_title">Качество</h2>
+                <p class="first_section_text">
+                  У нас только квалифицированные сотрудники, готовые помочь с любым вопросом. На велосипеды приобретенные у нас действуют <b> 40%</b> процентные скидки на их техническое обслуживание, и кучу приятных подарков в виде купонов, скидок и аксессуров.
+                </p>
+              </div>
+            </section>
+            <section id="second_section">
+              <div class="second_section_content">
+                <h2 class="first_section_title">
+                  Тусовка
+                </h2>
+                  <p class="second_section_text">
+                    Покупая велосипед, ты получаешь не только средство передвижения по городу или за ним, ты получаешь огромное количество эмоций, новые знакомства и возможность быть в тусовке единомышленников.
+                  </p>
+                </div>
+                  <div class="second_section_img">
+                      <img  src="pictures/team.jpg" alt="Друзья">
+                  </div>
+                
+            </section>
+        </article>
+        <article id="second_article">
+            <div class="buttons">
+              <div class="first_button"><a id="first" href="#">Наши партнеры</a></div>
+              <div class="second_button"><a href="#">Отзывы</a></div>
+            </div>
+        </article>
+    
+    </main>
+    <footer>
+      <span>Наши социальные сети:</span>
+      <div class="footer-social">
+        <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="social-icons"><i class="fa fa-vk"></i></a>
+        <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+    </div>
+
+      <div>
+        <p class="tel">
+          Наш номер: <a href="tel:+375293714748">+375293714748</a>
+        </p>
+        <p class="mail">
+          Наша почта: <a href="mailto:joyyolok@gmail.com">joyyolok@gmail.com</a>
+        </p>
+        
+        <div class="up">
+          <i class="fa fa-caret-up"></i>
+
+        </div>
+      </div>
+        <p>
+          &copy;Корнеев Никита Анатольевич 2021
+          </p>
+
+      </footer>
+</body>
+</html>
